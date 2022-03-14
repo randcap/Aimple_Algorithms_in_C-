@@ -11,7 +11,7 @@ void randomArr(int* a, int n, int l, int r);
 
 int main()
 {
-  clock_t startTime, endTime;
+  	clock_t startTime, endTime;
 	
 	int n = rand()%(30 - 20 + 1) + 20;  //生成[20,30]内的一个随机数
 	int* Array = new int[n];  //生成数组大小为n的动态数组
@@ -41,8 +41,8 @@ void selectSort(int arr[],int n) //选择排序算法实现
 	for (int i = 0; i < n; i++)
 	{
 		min = i;
-		
-    for (int j = i; j < n; j++)
+	
+		for (int j = i; j < n; j++)
 		{
 			if (arr[j] < arr[min])
 			{
@@ -50,7 +50,7 @@ void selectSort(int arr[],int n) //选择排序算法实现
 			}
 		}
 		
-    if (min != i)
+    		if (min != i)
 		{
 			temp = arr[i];
 			arr[i] = arr[min];
